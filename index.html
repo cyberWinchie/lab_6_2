@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота 6</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body { 
+      background-color: #f8e5e5; 
+      color: #333;
+    }
+    h1, h2, h3 { 
+      color: #4a0e0e; 
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    .btn { 
+      background-color: #e91e63; 
+      color: white; 
+      transition: all 0.3s ease;
+    }
+    .btn:hover { 
+      background-color: #c2185b; 
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .content-box {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .content-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    }
+    .social-button {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 24px;
+      color: #333;
+      transition: all 0.3s ease;
+    }
+    .social-button:hover {
+      transform: scale(1.1);
+    }
+    .fa-facebook { color: #3b5998; }
+    .fa-twitter { color: #1da1f2; }
+    .fa-linkedin { color: #0077b5; }
+    .fa-instagram { color: #e4405f; }
+  </style>
+</head>
+<body class="font-sans">
+  <div class="container mx-auto py-8 px-4">
+    <h1 class="text-5xl font-bold mb-12 text-center">Лабораторна робота 6</h1>
+
+
+    <div class="content-box p-6 mb-8">
+      <h2 class="text-3xl font-bold mb-4">Поділитися в соціальних мережах</h2>
+      <div class="flex justify-center">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-button">
+          <i class="fab fa-facebook"></i>
+        </a>
+        
+        <!-- Twitter -->
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-button">
+          <i class="fab fa-twitter"></i>
+        </a>
+        
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-button">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        
+        <!-- Instagram -->
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-button">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="content-box p-6 mb-8">
+        <h2 class="text-3xl font-bold mb-4">Перегляд вулиць</h2>
+        <div class="rounded-lg overflow-hidden">
+          <iframe src="https://www.google.com/maps/embed?pb=!4v1727267027766!6m8!1m7!1s-7ar6pAxMOvuQ9s3xvQCEw!2m2!1d49.83475700050654!2d24.01019279103739!3f46.038779595196885!4f-4.048015901655447!5f0.7820865974627469" width="100%" height="400" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="content-box p-6 mb-8">
+        <h2 class="text-3xl font-bold mb-4">Маршрут від 5 корпусу НУЛП до Головного</h2>
+            <div class="rounded-lg shadow-lg overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2573.3677887609783!2d24.00869057748654!3d49.83554652148115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x473add8e0d340f09%3A0x699fc00c7adebdd8!2zNS3QuSDQutC-0YDQv9GD0YEg0J3QoyDigJzQm9GM0LLRltCy0YHRjNC60LAg0L_QvtC70ZbRgtC10YXQvdGW0LrQsOKAnSwg0LLRg9C70LjRhtGPINCh0YLQtdC_0LDQvdCwINCR0LDQvdC00LXRgNC4LCAzMCwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!3m2!1d49.8349796!2d24.008074399999998!4m5!1s0x473add7a31f0dccd%3A0x9869cc7025bc8e3f!2z0J3QsNGG0ZbQvtC90LDQu9GM0L3QuNC5INGD0L3RltCy0LXRgNGB0LjRgtC10YIgItCb0YzQstGW0LLRgdGM0LrQsCDQn9C-0LvRltGC0LXRhdC90ZbQutCwIiwg0YPQu9C40YbQsCDQodGC0LXQv9Cw0L3QsCDQkdCw0L3QtNC10YDRiywg0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!3m2!1d49.8356402!2d24.0144368!5e0!3m2!1sru!2sua!4v1727281101677!5m2!1sru!2sua" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="content-box p-6 mb-8">
+        <h2 class="text-3xl font-bold mb-4">Мітка на Головному корпусі</h2>
+        <div class="rounded-lg overflow-hidden">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.388477639671!2d24.013566874863404!3d49.83515774251231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7a2c390e71%3A0xce87318e879dce52!2sул. Степана Бандеры, 12, Львов, Львовская область, 79000!5e0!3m2!1sru!2sua!4v1727215948892!5m2!1sru!2sua" width="100%" height="400" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="content-box p-6 mb-8">
+        <h2 class="text-3xl font-bold mb-4">Відредаговане відео</h2>
+        <div class="rounded-lg overflow-hidden">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/plVmAmQaNpc?si=qoXCoMMNlU7Dvj9S" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-box p-6 mb-8">
+        <h2 class="text-3xl font-bold mb-4">Синоптик</h2>
+        <div id="SinoptikInformer" style="width:100%;" class="SinoptikInformer type1c1 htic1">
+        <div class="siHeader"><div class="siLh"><div class="siMh"><a onmousedown="siClickCount();" class="siLogo" href="https://ua.sinoptik.ua/" target="_blank" rel="nofollow" title="Погода"> </a>Погода <span id="siHeader"></span></div></div></div><div class="siBody"><table><tbody><tr><td class="siCityV" style="width:33.333333333333336%;"><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-львів" title="Погода у Львові" target="_blank"><div class="siCityName"><span>Львів</span><td class="siCityV" style="width:33.333333333333336%;"><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-київ" title="Погода у Києві" target="_blank"><div class="siCityName"><span>Київ</span><td class="siCityV" style="width:33.333333333333336%;"><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-черкаси" title="Погода у Черкасах" target="_blank"><div class="siCityName"><span>Черкаси</span></a></div></tr><tr><td style="width:33.333333333333336%;"><div class="siCityV2"><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-львів" title="Погода у Львові" target="_blank"><div id="siCont0" class="siBodyContent"><div class="siLeft"><div class="siTerm"></div><div class="siT" id="siT0"></div><div id="weatherIco0"></div></div><div class="siInf"><p>вологість: <span id="vl0"></span></p><p>тиск: <span id="dav0"></span></p><p>вітер: <span id="wind0"></span></p></div></div></a></div></td><td style="width:33.333333333333336%;"><div class="siCityV2"><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-київ" title="Погода у Києві" target="_blank"><div id="siCont1" class="siBodyContent"><div class="siLeft"><div class="siTerm"></div><div class="siT" id="siT1"></div><div id="weatherIco1"></div></div><div class="siInf"><p>вологість: <span id="vl1"></span></p><p>тиск: <span id="dav1"></span></p><p>вітер: <span id="wind1"></span></p></div></div></a></div></td><td style="width:33.333333333333336%;"><div class="siCityV2"><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-черкаси" title="Погода у Черкасах" target="_blank"><div id="siCont2" class="siBodyContent"><div class="siLeft"><div class="siTerm"></div><div class="siT" id="siT2"></div><div id="weatherIco2"></div></div><div class="siInf"><p>вологість: <span id="vl2"></span></p><p>тиск: <span id="dav2"></span></p><p>вітер: <span id="wind2"></span></p></div></div></a></div></td></tr></tbody></table><div class="siLinks">Погода на 10 днів від <a href="https://ua.sinoptik.ua/10-днів" title="Погода на 10 днів" target="_blank" onmousedown="siClickCount();"> sinoptik.ua</a></div></div><div class="siFooter"><div class="siLf"><div class="siMf"></div></div></div></div><script type="text/javascript" charset="UTF-8" src="//sinoptik.ua/informers_js.php?title=1&amp;wind=3&amp;cities=303014487,303010783,303028869&amp;lang=ua"></script>
+      </div>
+    </div>
+
+    <div class="content-box p-6 mb-8">
+        <h2 class="text-3xl font-bold mb-4">Кнопки</h2>
+      <div class="rounded-lg shadow-lg overflow-hidden">
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XddZJY" data-pen-title="CSS BUTTONS!!" data-user="derekmorash"></p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      </div>
+    </div>
+
+    <div class="content-box p-6 mb-8">
+        <h2 class="text-3xl font-bold mb-4">Конвертер валют</h2>
+      <div id='gcw_mainFcMGajfd8' class='gcw_mainFcMGajfd8'></div>
+      <script async src="https://freecurrencyrates.com/en/widget-vertical-editable?iso=USD-EUR-XUL-JPY-BTC-CZK&df=1&p=FcMGajfd8&v=fits&source=fcr&width=270&width_title=0&firstrowvalue=1&thm=666666,000000,333333,333333,FFFFFF,666666,555555,ffffff,ffffff&title=Конвертер валют&tzo=-180"></script>
+    </div>
+
+    <div class="content-box p-6 mb-8">
+        <h2 class="text-3xl font-bold mb-4">Аудіо</h2>
+        <div class="rounded-lg overflow-hidden">
+          <audio controls class="w-full" autoplay>
+            <source src="swrslt.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <script>
+          const audioElement = document.querySelector('audio');
+          audioElement.volume = 0.1; 
+        </script>
+      </div>
+      
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <script async src="https://freecurrencyrates.com/en/widget-vertical-editable?iso=USD-EUR-XUL-JPY-BTC-CZK&df=1&p=FcMGajfd8&v=fits&source=fcr&width=270&width_title=0&firstrowvalue=1&thm=666666,000000,333333,333333,FFFFFF,666666,555555,ffffff,ffffff&title=Конвертер валют&tzo=-180"></script>
+  </body>
+  </html>
